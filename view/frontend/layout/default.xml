@@ -12,12 +12,7 @@
                     <!-- Configuration for bundles specific to certain types of pages. -->
                     <argument name="page_bundles" xsi:type="array"/>
                     <!-- List of bundles that should be prefetched when all things loaded and browser is idle. -->
-                    <argument name="prefetch_bundles" xsi:type="array">
-                        <item name="cms" xsi:type="string">magepack/bundle-cms.js</item>
-                        <item name="category" xsi:type="string">magepack/bundle-category.js</item>
-                        <item name="product" xsi:type="string">magepack/bundle-product.js</item>
-                        <item name="checkout" xsi:type="string">magepack/bundle-checkout.js</item>
-                    </argument>
+                    <argument name="prefetch_bundles" xsi:type="array"/>
                 </arguments>
             </block>
         </referenceBlock>
