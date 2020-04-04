@@ -141,8 +141,10 @@ class BundlesLoader extends Template
      */
     protected function _prepareLayout()
     {
-        foreach ($this->_getBundlesConfigPaths() as $bundleConfigPath) {
-            $this->_addBundleConfig($bundleConfigPath);
+        if ($this->isEnabled()) {
+            foreach ($this->_getBundlesConfigPaths() as $bundleConfigPath) {
+                $this->_addBundleConfig($bundleConfigPath);
+            }
         }
 
         return parent::_prepareLayout();
