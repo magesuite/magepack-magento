@@ -7,11 +7,11 @@ $prefetchBundlesUrls = $block->getPrefetchBundlesUrls();
 ?>
 
 <?php if ($commonBundleUrl): ?>
-<link rel="prefetch" as="script" href="<?= $commonBundleUrl; ?>"/>
+<link rel="prefetch" href="<?= $commonBundleUrl; ?>"/>
 <?php endif; ?>
 
 <?php foreach($pageBundlesUrls as $pageBundleUrl): ?>
-<link rel="prefetch" as="script" href="<?= $pageBundleUrl; ?>"/>
+<link rel="prefetch" href="<?= $pageBundleUrl; ?>"/>
 <?php endforeach; ?>
 
 <?php if (!empty($prefetchBundlesUrls)): ?>
