@@ -1,0 +1,25 @@
+# To install pre-commit run: pip install -U pre-commit
+#      or by using homebrew: brew install pre-commit
+# then initialize by executing: pre-commit instal
+
+---
+fail_fast: false
+
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.3.0
+  hooks:
+  - id: trailing-whitespace
+  - id: end-of-file-fixer
+  - id: fix-byte-order-marker
+  - id: mixed-line-ending
+  - id: check-added-large-files
+    args: [--maxkb=2048]
+  - id: check-executables-have-shebangs
+  - id: check-json
+  - id: check-merge-conflict
+  - id: check-xml
+- repo: https://github.com/digitalpulp/pre-commit-php.git
+  rev: 1.4.0
+  hooks:
+  - id: php-lint-all
